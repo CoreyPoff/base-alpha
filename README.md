@@ -13,12 +13,12 @@ If you're wondering why I chose to go with npm scripts, here are a few articles 
 [Why I Left Gulp and Grunt for npm Scripts](https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8#.hf3w3qkb8) by Cory House
 [How to Use npm as a Build Tool](https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) by Keith Cirkel
 
-### npm scripts
+### Key Players
 
 **clean**
 >Uses `rimraf` to wipe out the `build` folder
 
-**autoprefixer** and **scss**
+**autoprefixer** & **scss**
 >Uses `postcss` and `node-sass` to compile all `.scss` files inside `src`
 
 **pug**
@@ -33,8 +33,8 @@ If you're wondering why I chose to go with npm scripts, here are a few articles 
 **serve**
 >Uses `browser-sync` to start a local server and inject changes
 
-**watch:js** and **watch:scss** and **watch:pug**
->Uses `onchange` to watch `.js`, `.scss`, and `.pug` files, and update the `build` folder accordingly
+**watch:js** & **watch:scss** & **watch:pug**
+>Use `onchange` to watch `.js`, `.scss`, and `.pug` files, and update the `build` folder accordingly
 
 **watch:all**
 >Uses `parallelshell` to run `serve` and three `watch` scripts simultaneously
