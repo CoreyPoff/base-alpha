@@ -7,18 +7,23 @@
     $locationProvider.hashPrefix('');
 
     $routeProvider.when('/home', {
-      templateUrl: 'build/pages/home.html',
+      templateUrl: 'build/pug/home.html',
       controller: 'HomeCtrl'
     }).when('/about', {
-      templateUrl: 'build/pages/about.html',
+      templateUrl: 'build/pug/about.html',
       controller: 'AboutCtrl'
     }).when('/', {
-      templateUrl: 'build/pages/home.html'
+      templateUrl: 'build/pug/home.html'
     }).otherwise({ redirectTo: '/' });
 
   }]);
 
   app.controller('HomeCtrl', ['$scope', function($scope) {
+    $scope.pageClass = 'page-home';
+    console.log($scope.pageClass);
+  }]);
+
+  app.controller('TestCtrl', ['$scope', function($scope) {
     $scope.pageClass = 'page-home';
     console.log($scope.pageClass);
   }]);
