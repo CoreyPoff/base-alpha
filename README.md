@@ -15,26 +15,26 @@ If you're wondering why I chose to go with npm scripts, here are a few articles 
 
 ### npm scripts
 
-*clean*
-Uses `rimraf` to wipe out the `build` folder
+**clean**
+>Uses `rimraf` to wipe out the `build` folder
 
-*autoprefixer* and *scss*
-Uses `postcss` and `node-sass` to compile all `.scss` files inside `src`
+**autoprefixer** and **scss**
+>Uses `postcss` and `node-sass` to compile all `.scss` files inside `src`
 
-*pug*
-Uses `pug-cli` to compile all `.pug` files inside `src`
+**pug**
+>Uses `pug-cli` to compile all `.pug` files inside `src`
 
-*uglify*
-Uses `uglify-js` to mangle all `.js` files inside `src`
+**uglify**
+>Uses `uglify-js` to mangle all `.js` files inside `src`
 
-*img*
-Uses `imagemin-cli` to minify all images inside `src`
+**img**
+>Uses `imagemin-cli` to minify all images inside `src`
 
-*serve*
-Uses `browser-sync` to start a local server and inject changes
+**serve**
+>Uses `browser-sync` to start a local server and inject changes
 
-*watch:js* and *watch:scss* and *watch:pug*
-Uses `onchange` to watch `.js`, `.scss`, and `.pug` files, and update the `build` folder accordingly
+**watch:js** and **watch:scss** and **watch:pug**
+>Uses `onchange` to watch `.js`, `.scss`, and `.pug` files, and update the `build` folder accordingly
 
-*watch:all*
-Uses `parallelshell` to run `serve` and three `watch` scripts simultaneously
+**watch:all**
+>Uses `parallelshell` to run `serve` and three `watch` scripts simultaneously
