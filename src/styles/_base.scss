@@ -7,6 +7,9 @@ html {
 body {
 	padding-top: 70px;
 	font-family: 'Roboto', sans-serif;
+	background: url(../../build/images/basic-bg.jpg);
+	background-size: cover;
+	color: white;
 }
 
 .navbar {
