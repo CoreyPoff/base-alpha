@@ -1,0 +1,17 @@
+.form-container
+  form
+  .form-group
+    label(for='exampleInputEmail1') Email address
+    input#exampleInputEmail1.form-control(type='email' placeholder='Email' runat='server')
+  .form-group
+    label(for='exampleInputPassword1') Password
+    input#exampleInputPassword1.form-control(type='password' placeholder='Password' runat='server')
+  .form-group
+    label(for='exampleInputFile') File input
+    input#exampleInputFile(type='file' runat='server')
+    p.help-block Example block-level help text here.
+  .checkbox
+    label
+      input(type='checkbox')
+      |  Check me out
+  button.btn.btn-default#submitBtn(type='submit' runat='server') Submit
